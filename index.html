@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Tsykunov — Junior Python / AI Automation Developer</title>
+  <meta name="description" content="Portfolio of David Tsykunov, junior Python / AI Automation developer: FastAPI backends, LLM/RAG assistants, Telegram bots, API integrations and internal tools.">
+  <meta property="og:title" content="David Tsykunov — Junior Python / AI Automation Developer">
+  <meta property="og:description" content="Practical Python and AI automation projects: FastAPI backends, LLM/RAG assistants, Telegram bots and internal tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hullymully.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230d1420'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' fill='%236ea8fe' text-anchor='middle'%3EDT%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="#top" class="nav-brand" data-i18n="brand">David Tsykunov</a>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#stack" data-i18n="nav.stack">Tech Stack</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang-toggle" role="group" aria-label="Language / Язык">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="hero-kicker" data-i18n="hero.kicker">Hi, I'm</p>
+      <h1 data-i18n="hero.name">David Tsykunov</h1>
+      <p class="hero-role" data-i18n="hero.role">Junior Python / AI Automation Developer</p>
+      <ul class="hero-tags" aria-label="Focus areas">
+        <li>FastAPI</li>
+        <li>LLM / RAG</li>
+        <li data-i18n="hero.tagBots">Telegram Bots</li>
+        <li data-i18n="hero.tagApi">API Integrations</li>
+        <li data-i18n="hero.tagTools">Internal Tools</li>
+      </ul>
+      <p class="hero-desc" data-i18n="hero.desc">
+        I build practical Python and AI automation projects: FastAPI backends, LLM/RAG assistants,
+        Telegram bots, internal tools and business automation prototypes.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View Projects</a>
+        <a href="https://github.com/HullyMully" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="hero.githubProfile">GitHub Profile</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container reveal">
+      <h2><span class="section-index">01.</span> <span data-i18n="about.title">About</span></h2>
+      <div class="about-text">
+        <p data-i18n="about.p1">
+          I'm a junior Python developer focused on AI automation. I enjoy turning repetitive
+          business processes into working software: backend APIs, assistants built on LLMs and
+          retrieval-augmented generation, and Telegram bots that real users interact with.
+        </p>
+        <p data-i18n="about.p2">
+          My projects are built end to end: API design, data storage, vector search, external
+          integrations, tests and Docker. I care about honest engineering, validating what an AI
+          agent does before it acts, keeping decisions structured and inspectable, and writing
+          code that is easy to read and maintain.
+        </p>
+        <p data-i18n="about.p3">
+          I'm currently open to junior Python / AI automation roles and freelance projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section container reveal">
+      <h2><span class="section-index">02.</span> <span data-i18n="projects.title">Featured Projects</span></h2>
+      <div class="projects-grid">
+
+        <article class="card">
+          <h3>AI Customer Assistant Platform</h3>
+          <p class="card-desc" data-i18n="project1.desc">
+            FastAPI-based AI customer assistant with LLM planner, RAG/Qdrant, structured JSON
+            decisions, conversation history, lead/ticket creation, Telegram integration, admin
+            panel and backend validation before executing actions.
+          </p>
+          <ul class="card-tech" aria-label="Technologies">
+            <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>Qdrant</li><li>RAG</li>
+            <li>LLM planner</li><li>Telegram Bot API</li><li>Docker</li><li>pytest</li>
+          </ul>
+          <div class="card-actions">
+            <a href="https://github.com/HullyMully/ai-marketing-agent-rag-langgraph" class="btn btn-primary btn-sm" target="_blank" rel="noopener">GitHub</a>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.liveDemo">Live demo · Coming soon</button>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.demoVideo">Demo video · Coming soon</button>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.screenshots">Screenshots · Coming soon</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>CS2 AI Commentator</h3>
+          <p class="card-desc" data-i18n="project2.desc">
+            Real-time AI commentary prototype for CS2 using computer vision, event detection,
+            FastAPI backend, LLM text generation and TTS.
+          </p>
+          <ul class="card-tech" aria-label="Technologies">
+            <li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>ByteTrack</li><li>FastAPI</li>
+            <li>LLM</li><li>TTS</li>
+          </ul>
+          <div class="card-actions">
+            <a href="https://github.com/HullyMully/cs2-ai-commentator" class="btn btn-primary btn-sm" target="_blank" rel="noopener">GitHub</a>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.demoVideo">Demo video · Coming soon</button>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.screenshots">Screenshots · Coming soon</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>TotalBody Telegram Mini App &amp; Bot</h3>
+          <p class="card-desc" data-i18n="project3.desc">
+            Freelance Telegram Mini App and bot project for a stretching/wellness studio.
+            Includes service information, booking flow, client profile, data collection and
+            admin broadcasts.
+          </p>
+          <ul class="card-tech" aria-label="Technologies">
+            <li>Python</li><li>Telegram Bot API</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            <li>VDS deployment</li>
+          </ul>
+          <div class="card-actions">
+            <a href="https://github.com/HullyMully/totalbody-telegram-miniapp-bot" class="btn btn-primary btn-sm" target="_blank" rel="noopener">GitHub</a>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.demoVideo">Demo video · Coming soon</button>
+            <button class="btn btn-sm" disabled aria-disabled="true" data-i18n="btn.screenshots">Screenshots · Coming soon</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="stack" class="section container reveal">
+      <h2><span class="section-index">03.</span> <span data-i18n="stack.title">Tech Stack</span></h2>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <h3 data-i18n="stack.backend">Backend</h3>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>REST API</li><li>SQLAlchemy</li><li>SQLite</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="stack.ai">AI &amp; Computer Vision</h3>
+          <ul class="tags">
+            <li>Qdrant</li><li>RAG</li><li>LLM integrations</li>
+            <li>OpenCV</li><li>YOLOv8</li><li>ByteTrack</li><li>TTS</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="stack.bots">Bots &amp; Integrations</h3>
+          <ul class="tags">
+            <li>Telegram Bot API</li><li>aiogram</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="stack.tools">Tools &amp; Frontend</h3>
+          <ul class="tags">
+            <li>Docker</li><li>Git</li><li>pytest</li>
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container reveal">
+      <h2><span class="section-index">04.</span> <span data-i18n="contact.title">Contact</span></h2>
+      <p class="contact-intro" data-i18n="contact.intro">
+        Open to junior Python / AI automation roles and freelance projects.
+        The fastest way to reach me is Telegram or email.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card" href="https://github.com/HullyMully" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/HullyMully</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/david-tsykunov/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/david-tsykunov</span>
+        </a>
+        <a class="contact-card" href="https://t.me/mullycyrus" target="_blank" rel="noopener">
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@mullycyrus</span>
+        </a>
+        <a class="contact-card" href="mailto:davidTsykunov@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">davidTsykunov@gmail.com</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> <span data-i18n="footer.name">David Tsykunov</span> · <span data-i18n="footer.built">Built with plain HTML, CSS and JavaScript</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
